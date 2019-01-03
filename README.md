@@ -26,7 +26,7 @@ Hackintosh your Y510P Notebook
 * SIP (0ff)
 
 
-## Problem
+## Problems
 * VGA Port:This will not work at all. A workaround when projecting to VGA display is to buy and use (male)HDMI-to-(fem﻿ale)VGA adapter. 
 * Restart:There is a problem related to graphics occurs when﻿ display goes off then on, like when system sleeps ﻿and wake or when changing display r﻿esolutio﻿n for example, which results in n﻿o display on restart﻿. These ev﻿ents requires re-initialization for the graphic driver but it seems the driver re-initialize incorrectly. As a result, the graphics related memory hold wrong data for some graphic registers which indirectly affects the restart functionality. Once the system is restarted in any of these scenarios, the POST (where Lenovo logo should appear) has no display and so is Clover and beyond if an OS is selected and booted using keyboard blindly. However, this is a graphic driver issue and has nothing to do with power or reboot function itself.
 * Nvidia GPU (built-in): This will have to be disabled as OS X does not support Optimus technology.
