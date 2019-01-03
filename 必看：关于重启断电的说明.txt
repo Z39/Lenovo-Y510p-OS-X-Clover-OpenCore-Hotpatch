@@ -1,0 +1,7 @@
+1.BIOS设置BOOT设置为UEFI only模式，不要打开Legacy support
+2.开机进度条会有一闪的花屏（主要是关闭了Legacy support的CSM作用）
+3.睡眠唤醒过一次后请不要使用重启，否则重启不断电且一直黑屏，需要紧按电源键，让屏幕亮起来。注意不要搞成紧按时间不要太长，否则变成强制关机了。
+4.发现UEFI only模式下，原来的亮度调节亮度表不起作用，现更换成R大的AppleBacklightFixup.kext新方法
+5.此文件好像也可在开Legacy support模式下用，但跟以前一样重启不断电，其他黑果效果一样
+6.关于替换clover或者更改BOOT模式引起的一些问题，请运行Kext Utility修复权限和缓存。如果进不了mac，是因为关机或者重启不到位等原因，可先进一下win然后进mac，可解决问题。
+7.本人机子Y410P，低分屏已测试
