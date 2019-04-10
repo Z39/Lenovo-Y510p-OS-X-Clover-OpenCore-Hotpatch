@@ -4,6 +4,18 @@ Hackintosh your Y510P Notebook
 
 [English](README.md) | [中文](README-CN.md)
 
+
+| ------------ | :---------------------------------------------: |
+| Computer     |           Lenovo IdeaPad Y510P Laptop           |
+| CPU          |          Intel Haswell Core i5-4200M @ 2.50G/Intel Haswell Core i7-4700MQ @ 2.40G           |
+| Chipset      |           Lenovo (Intel HM86 Chipset)           |
+| Graphics     |          HD4600 (using Intel GPU only)          |
+| Audio        | ALC282 @ Intel Lynx Point High Definition Audio |
+| Ethernet     |        Atheros QCA8171 Gigabit Ethernet         |
+| WiFi         |          Broadcom BCM94352HMB 802.11AC          |
+| Bluetooth    |                 BCM20702 (4.0)                  |
+| BIOS Version |                      3.08                       |
+
 ## Features
 
 * Support 10.13.x and 10.14.x
@@ -33,6 +45,29 @@ Hackintosh your Y510P Notebook
 * Audio:There is a problem of pop when boot the notebook
 * Truddy:There is a problem of truddy when boot the notebook if your notebook's bios be set to uefi only.
 
+## Links
+
+- Clover EFI bootloader [Link](https://github.com/Dids/clover-builder/releases)
+
+- FakeSMC [Link](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
+
+- VoodooPS2Controller [Link](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/)
+
+- ACPIBatteryManager [Link](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/)
+
+- BrcmPatchRAM [Link](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
+
+- Lilu [Link](https://github.com/acidanthera/Lilu)
+
+- AirportBrcmFixup [Link](https://github.com/acidanthera/AirportBrcmFixup)
+
+- WhateverGreen [Link](https://github.com/acidanthera/WhateverGreen)
+
+- AppleALC [Link](https://github.com/acidanthera/AppleALC)
+
+- AtherosE2200Ethernet [Link](https://github.com/Mieze/AtherosE2200Ethernet)
+
+- Enable macOS HiDPI [Link](https://github.com/xzhih/one-key-hidpi)
 
 ## Credits
 
