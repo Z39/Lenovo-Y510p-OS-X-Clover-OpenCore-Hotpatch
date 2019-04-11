@@ -6,7 +6,7 @@ Hackintosh your Y510P Notebook
 
 
 * | Computer:Lenovo IdeaPad Y510P Laptop
-* | CPU :Intel Haswell Core i5-4200M @ 2.50G/Intel Haswell Core i7-4700MQ @ 2.40G
+* | CPU :Intel Core i5-4200M @ 2.50G/Intel Core i7-4700MQ @ 2.40G (Haswell )
 * | Chipset : Lenovo (Intel HM86 Chipset)
 * | Graphics :HD4600 (using Intel GPU only) 
 * | Audio:ALC282 @ Intel Lynx Point High Definition Audio
