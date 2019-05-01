@@ -343,6 +343,8 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>brcmfx-country=US</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
