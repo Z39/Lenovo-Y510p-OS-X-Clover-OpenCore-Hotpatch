@@ -16,7 +16,7 @@ Hackintosh your Y510P Notebook
 ![Screen](Screen.JPG)  
 ## Features
 
-* Support 10.13.x and 10.14.x
+* Support 10.13.x and 10.14.x 10.15.x
 * ACPI fixes use hotpatch; related files are located in `/CLOVER/ACPI/patched`.## Releases
 
 ## Releases
