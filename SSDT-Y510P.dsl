@@ -31,6 +31,7 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "_HACK", 0)
             "Windows 2018",         // Windows 10, version 1803
             "Windows 2018.2",       // Windows 10, version 1809
             "Windows 2019",         // Windows 10, version 1903
+            "Windows 2019.2"        // Windows 10, version 1909
          }, Local0)
         Return (Ones != Match(Local0, MEQ, Arg0, MTR, 0, 0))
     }
@@ -556,11 +557,11 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "_HACK", 0)
         })
     }
 
-    External (_SB.PCI0.LPCB.EC0, DeviceObj)    // (from opcode)
+    External (_SB.PCI0.LPCB.EC, DeviceObj)    // (from opcode)
     External (_SB.PCI0.LPCB.PS2K, DeviceObj)    // (from opcode)
   
 
-    Scope (_SB.PCI0.LPCB.EC0)
+    Scope (_SB.PCI0.LPCB.EC)
     {
         // _Q11 called on brightness down key
         Method (_Q11, 0, NotSerialized)  // _Qxx: EC Query
@@ -594,7 +595,7 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "_HACK", 0)
     })
 
     External (_SB.PCI0.LPCB.ECOK, MethodObj)
-    External (_SB.PCI0.LPCB.EC0.ENDD, FieldUnitObj)
+    External (_SB.PCI0.LPCB.EC.ENDD, FieldUnitObj)
     External (_TZ.THLD, UnknownObj)
     External (_TZ.TZ00.PTMP, UnknownObj)
     // TMP is renamed to XTMP
@@ -605,9 +606,9 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "_HACK", 0)
         {
             If (\_SB.PCI0.LPCB.ECOK ())
             {
-                Store (Zero, \_SB.PCI0.LPCB.EC0.ENI0)
-                Store (0x84, \_SB.PCI0.LPCB.EC0.ENI1)
-                Store (\_SB.PCI0.LPCB.EC0.ENDD, Local0)
+                Store (Zero, \_SB.PCI0.LPCB.EC.ENI0)
+                Store (0x84, \_SB.PCI0.LPCB.EC.ENI1)
+                Store (\_SB.PCI0.LPCB.EC.ENDD, Local0)
             }
             Else
             {
@@ -627,8 +628,8 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "_HACK", 0)
         }
     }
     
-    External(_SB.PCI0.LPCB.EC0, DeviceObj)
-    Scope (_SB.PCI0.LPCB.EC0)
+    External(_SB.PCI0.LPCB.EC, DeviceObj)
+    Scope (_SB.PCI0.LPCB.EC)
     {
         // This is an override for battery methods that access EC fields
         // larger than 8-bit.
