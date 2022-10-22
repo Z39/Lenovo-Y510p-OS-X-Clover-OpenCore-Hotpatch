@@ -1,4 +1,4 @@
-# 联想Y510P安装macOS 12 Monterey&macOS Big Sur 11.0&macOS Catalina 10.15& macOS Mojave 10.14& High Sierra 10.13使用说明
+# 联想Y510P安装macOS 13 Ventura&macOS 12 Monterey&macOS Big Sur 11.0&macOS Catalina 10.15& macOS Mojave 10.14& High Sierra 10.13使用说明
 
 让你的Y510P笔记本吃上黑苹果
 
